@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&family=Playfair+Display&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* This ensures padding and border are included in the total width and height */
+  }  
+
+#contact {
+    height: 25px;
+    width: 100px;
+    margin-right: 20px;
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(56, 103, 83);
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+    position: fixed;
+    z-index: 1000;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(56, 103, 83);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.footer-copyright {
+    text-decoration: none;
+    color: #fff;
+    padding-right: 20px;
+    font-size: large;
+    font-weight: 900;
+}
+
+.footer-copyright:hover {
+    color:rgb(3, 50, 20);
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+.navlinks {
+    text-decoration: none;
+    color: #fff;
+    padding-right: 20px;
+    font-size: large;
+    font-weight: 900;
+    
+}
+
+.navlinks:hover {
+    color:rgb(3, 50, 20);
+}
+
+#codeFlyThru {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+#bulldog {
+    position: absolute;
+    top: 20%; /* Start at 50% from the top */
+    left: 50%; /* Start at 50% from the left */
+    transform: translate(-50%, -50%); /* Adjust the position to center the element */
+    z-index: 3;
+    max-width: 100px;
+    max-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ugabrand {
+    position: absolute;
+    top: 80%; /* Start at 50% from the top */
+    left: 50%; /* Start at 50% from the left */
+    transform: translate(-50%, -50%); /* Adjust the position to center the element */
+    z-index: 3;
+    max-width: 150px;
+    max-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; 
+    font-size: 10vw;
+    padding-bottom: 0.75em;
+    z-index: 2;
+}
+
+#header-subtitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 5vw;
+    padding-top: 100px;
+    z-index: 1;
+}
+
+.video-container {
+    position: relative;
+    width: 100%; 
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.greeting-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 20px; 
+    background-color: rgb(23, 48, 38); 
+    justify-content: space-around; 
+    align-items: stretch;
+    height: auto;
+    min-height: 500px;
+}
+
+#shane-pic {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    object-position: top; 
+    overflow: hidden; 
+}
+
+.shane-pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 300px;
+}
+
+.profile-card-title {
+    font-size: 18px;
+    color: gray;
+}
+
+.profile-card-university-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-card-university {
+    font-size: 18px;
+}
+
+.profile-card-contact {
+    padding: 8px;
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+    font-size: 32px;
+}
+
+
+
+/* Greeting Card */
+
+.greeting-card {
+    /*flex-grow: 1;*/
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px 0 rgba(0, 255, 191, 0.6);
+    margin: auto;
+    text-align: center;
+    background-color: rgb(56, 103, 83);
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+.greeting-card-title-container {
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#greeting-card-title {
+    color:#fff;
+    font-size: 48px;
+}
+
+.about-me-container {
+    height: auto;
+    width: 70vw;
+    background-color:rgb(83, 157, 122);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 30px;
+}
+
+#about-me {
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* horizontal rule */
+
+hr {
+    border-color: rgb(0, 255, 191);
+    background-color: rgb(0, 255, 191);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 5px;
+    width: 75%;
+    border-radius: 25%;
+}
+
+.hr-container {
+    background-color: rgb(83, 157, 122);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-me-title {
+    color:#fff;
+    padding-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+}
+
+/* Three Column Grid */
+.three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100vw;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(83, 157, 122);
+}
+
+/* basic card outline */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px 0 rgba(0, 255, 191, 0.6);
+    margin: auto;
+    text-align: center;
+    background-color: rgb(56, 103, 83);
+    border-radius: 10px;
+    width: 25vw;
+    height: 100%;
+}
+
+.card-pic {
+    width: 100%;   
+    object-fit: fill; 
+    object-position: top; 
+    /*overflow: hidden;*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title-container {
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+.card-list-container {   
+    height: 100%;
+    width: auto;
+    background-color:rgb(83, 157, 122);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-title {
+    color:#fff;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.card-pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-list-item {
+    color:#fff;
+    padding-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+
+.leadership-card-list-item {
+    color:#fff;
+    padding-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.language-list-item {
+    color:#fff;
+    padding-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Leadership and Experience */
+
+.experience-link {
+    text-decoration: none;
+}
+
+#temp-checker {
+    color: #0000EE;
+}
+
+#temp-checker:hover {
+    color: rgb(0, 255, 191);
+}
+
+#romega-digital {
+    color: #0000EE;
+}
+
+#romega-digital:hover {
+    color: rgb(0, 255, 191);
+}
+
+/* Skills */
+
+.star-rating {
+    padding-bottom: 20px;
+    font-size: 24px; /* Adjust the size as needed */
+    color: #FFD700; /* Gold color, similar to your provided image */
+  }
+
+/* Contact Page*/
+.contact-body {
+    margin: 0;
+    background-color: rgb(23, 48, 38);
+    width: 100%;
+}
+
+.contact-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    color: #fff;
+    font-size: 6vw;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+    font-size: 4vw;
+}
+
+#contact-hr-container {
+    background-color: rgb(23, 48, 38);
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#contact-hr {
+    width: 50%;
+}
+
+.contact-form {
+    padding: 20px;
+    height: 80%;
+}
+
+#contact-form-card {
+    width: 80vw;
+    height: auto;
+    margin-bottom: 60px;
+}
+
+.form-item-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding: 20px;
+    width: 100%
+}
+
+.form-item-container label {
+    margin-right: 10px;
+    white-space: nowrap;
+    color:#fff;
+    font-size: large;
+    text-align: left;
+    min-width: 100px;
+}
+
+.form-item-container input {
+    flex-grow: 1;
+}
+
+.form-item-container textarea {
+    flex-grow: 1;
+}
+
+.form-item-container input[type="submit"] {
+    font-weight: 600;
+    flex-grow: .25;
+    height: 40px;
+    border-radius: 10px;
+    border-color: #fff;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+}
+
+.one-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgb(83, 157, 122);
+}
